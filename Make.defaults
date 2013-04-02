@@ -54,7 +54,7 @@ GCCNEWENOUGH := $(shell ([ $(GCCVERSION) -gt "4" ] || ([ $(GCCVERSION) -eq "4" ]
 
 CPPFLAGS   = -DCONFIG_$(ARCH)
 ifeq ($(GCCNEWENOUGH),1)
-CPPFLAGS   += -DGNU_EFI_USE_MS_ABI -maccumulate-outgoing-args --std=c11
+CPPFLAGS   += -maccumulate-outgoing-args --std=c11
 endif
 CFLAGS	   = $(ARCH3264) -O2 -fpic -Wall -fshort-wchar -fno-strict-aliasing -fno-merge-constants
 ASFLAGS    = $(ARCH3264)
