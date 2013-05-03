@@ -7,6 +7,7 @@ Url:            http://sourceforge.net/projects/gnu-efi/
 Group:          System/Boot
 Source0:        http://download.sourceforge.net/%{name}/%{name}_%{version}.orig.tar.gz
 BuildRequires:  pciutils
+ExclusiveArch:  %ix86 x86_64
 
 
 %description
