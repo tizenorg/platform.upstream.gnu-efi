@@ -1,0 +1,8 @@
+Change-Id: If6c0f11ff9d9c2427b94c78a37cc9f7dc47de138
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 09:40:56 -0700
+Reviewed-on: https://review.tizen.org/gerrit/4723
+Project: platform/upstream/gnu-efi
+Branch: refs/heads/tizen
