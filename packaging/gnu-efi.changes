@@ -1,3 +1,6 @@
+* Sun Aug 25 2013 Chengwei Yang <chengwei.yang@intel.com>
+- Remove debian packaging stuff
+
 * Fri May 03 2013 Anas Nashif <anas.nashif@intel.com> accepted/trunk/20130406.013345@d81db06
 - Be exclusive to %ix86
 
