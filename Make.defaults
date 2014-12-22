@@ -52,13 +52,13 @@ GCCVERSION := $(shell gcc -dumpversion | cut -f1 -d.)
 GCCMINOR := $(shell gcc -dumpversion | cut -f2 -d.)
 GCCNEWENOUGH := $(shell ([ $(GCCVERSION) -gt "4" ] || ([ $(GCCVERSION) -eq "4" ] && [ $(GCCMINOR) -ge "7" ])) && echo 1)
 
-CPPFLAGS   = -DCONFIG_$(ARCH)
+CPPFLAGS   += -DCONFIG_$(ARCH)
 ifeq ($(GCCNEWENOUGH),1)
 CPPFLAGS   += -maccumulate-outgoing-args --std=c11
 endif
-CFLAGS	   = $(ARCH3264) -O2 -fpic -Wall -fshort-wchar -fno-strict-aliasing -fno-merge-constants
+CFLAGS	   += $(ARCH3264) -O2 -fpic -Wall -fshort-wchar -fno-strict-aliasing -fno-merge-constants
 ASFLAGS    = $(ARCH3264)
-LDFLAGS	   = -nostdlib
+LDFLAGS	   += -nostdlib
 INSTALL	   = install
 prefix     = /usr/bin/
 
