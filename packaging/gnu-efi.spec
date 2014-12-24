@@ -19,6 +19,8 @@ gnu-efi is a library for building EFI applications
 cp %{SOURCE1001} .
 
 %build
+export CFLAGS+=" -fno-stack-protector "
+export CXXFLAGS+=" -fno-stack-protector "
 make
 
 %install
